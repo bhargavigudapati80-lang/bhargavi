@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Abstract red and white shapes symbolizing blood flow",
+      "imageUrl": "https://images.unsplash.com/photo-1524721696987-b9527df9e512?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHJlZHxlbnwwfHx8fDE3Njc0MjEzMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract red"
+    },
+    {
+      "id": "hospital",
+      "description": "A modern hospital building exterior",
+      "imageUrl": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxob3NwaXRhbCUyMGJ1aWxkaW5nfGVufDB8fHx8MTc2NzQxOTEwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hospital building"
+    },
+    {
+      "id": "blood-bank",
+      "description": "A laboratory with blood bags",
+      "imageUrl": "https://images.unsplash.com/photo-1733119889719-779e934699b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ymxvb2QlMjBsYWJ8ZW58MHx8fHwxNzY3NDIxMzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blood lab"
+    },
+    {
+      "id": "login-background",
+      "description": "A subtle, professional background image for the login screen",
+      "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHBhdHRlcm58ZW58MHx8fHwxNzY3NDE2NDgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract pattern"
+    }
+  ]
 }
