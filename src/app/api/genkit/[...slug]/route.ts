@@ -1,4 +1,11 @@
-import {nextPlugin} from '@genkit-ai/next';
-import {ai} from '@/ai/genkit';
+import { NextRequest } from "next/server";
+import { runFlow } from "genkit";
+import "@/ai/genkit"; // ensures flows are registered
 
-export const {GET, POST} = nextPlugin(ai);
+export async function POST(req: NextRequest) {
+  return runFlow(req);
+}
+
+export async function GET(req: NextRequest) {
+  return runFlow(req);
+}
