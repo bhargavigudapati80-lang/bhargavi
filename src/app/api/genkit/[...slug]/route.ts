@@ -1,12 +1,39 @@
-import { NextRequest } from "next/server";
-import { runFlow } from "genkit";
-import "@/ai/genkit"; // important: registers flows
+// File: /app/api/genkit/[...slug]/route.js
+import { NextResponse } from 'next/server';
 
-export async function POST(req: NextRequest) {
-  return runFlow(req);
+// Catch all API route handler
+export async function GET(req, { params }) {
+  try {
+    const { slug } = params; // slug is an array, because of [...slug]
+    
+    // Example: return the slug back as JSON
+    return NextResponse.json({
+      message: 'API working!',
+      slug: slug,
+    });
+  } catch (error) {
+    console.error('Error in API route:', error);
+    return NextResponse.json(
+      { error: 'Something went wrong' },
+      { status: 500 }
+    );
+  }
 }
 
-export async function GET(req: NextRequest) {
-  return runFlow(req);
+// Optional: POST handler
+export async function POST(req, { params }) {
+  try {
+    const body = await req.json();
+    return NextResponse.json({
+      message: 'POST received!',
+      body,
+      slug: params.slug,
+    });
+  } catch (error) {
+    console.error('Error in POST handler:', error);
+    return NextResponse.json(
+      { error: 'Something went wrong' },
+      { status: 500 }
+    );
+  }
 }
-
